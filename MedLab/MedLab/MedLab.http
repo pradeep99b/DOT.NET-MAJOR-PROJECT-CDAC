@@ -1,6 +1,0 @@
-@MedLab_HostAddress = http://localhost:5118
-
-GET {{MedLab_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
