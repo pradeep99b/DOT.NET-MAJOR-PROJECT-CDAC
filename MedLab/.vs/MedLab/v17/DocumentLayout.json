@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\medlab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\medlab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\models\\medlabdatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\models\\medlabdatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\constants\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\constants\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\data\\migrations\\medlabdatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\migrations\\medlabdatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|c:\\users\\bahuk\\desktop\\cdac-dotnet major project\\medlab\\medlab\\data\\migrations\\20240811203142_initialupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B8471D6-ADDE-403D-8DB8-AF19D7B37745}|MedLab\\MedLab.csproj|solutionrelative:medlab\\data\\migrations\\20240811203142_initialupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 103,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\appsettings.json",
+              "RelativeDocumentMoniker": "MedLab\\appsettings.json",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\appsettings.json",
+              "RelativeToolTip": "MedLab\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T11:04:11.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "MedLab\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "MedLab\\Data\\DbSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T23:35:04.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedLab.csproj",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj",
+              "RelativeDocumentMoniker": "MedLab\\MedLab.csproj",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj",
+              "RelativeToolTip": "MedLab\\MedLab.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-11T23:34:12.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Constants\\Role.cs",
+              "RelativeDocumentMoniker": "MedLab\\Constants\\Role.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Constants\\Role.cs",
+              "RelativeToolTip": "MedLab\\Constants\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T23:17:00.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MedLabDatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\MedLabDatabaseContext.cs",
+              "RelativeDocumentMoniker": "MedLab\\Models\\MedLabDatabaseContext.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\MedLabDatabaseContext.cs",
+              "RelativeToolTip": "MedLab\\Models\\MedLabDatabaseContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:53:54.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Program.cs",
+              "RelativeDocumentMoniker": "MedLab\\Program.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Program.cs",
+              "RelativeToolTip": "MedLab\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:48:33.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MedLab\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\User.cs",
+              "RelativeToolTip": "MedLab\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:52:17.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MedLabDatabaseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\Migrations\\MedLabDatabaseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "MedLab\\Data\\Migrations\\MedLabDatabaseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\Migrations\\MedLabDatabaseContextModelSnapshot.cs",
+              "RelativeToolTip": "MedLab\\Data\\Migrations\\MedLabDatabaseContextModelSnapshot.cs",
+              "ViewState": "AQIAALECAAAAAAAAAAAIwMUCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T21:15:03.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240811203142_InitialUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\Migrations\\20240811203142_InitialUpdate.cs",
+              "RelativeDocumentMoniker": "MedLab\\Data\\Migrations\\20240811203142_InitialUpdate.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Data\\Migrations\\20240811203142_InitialUpdate.cs",
+              "RelativeToolTip": "MedLab\\Data\\Migrations\\20240811203142_InitialUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:31:42.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\Test.cs",
+              "RelativeDocumentMoniker": "MedLab\\Models\\Test.cs",
+              "ToolTip": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\Models\\Test.cs",
+              "RelativeToolTip": "MedLab\\Models\\Test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T20:24:57.584Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
