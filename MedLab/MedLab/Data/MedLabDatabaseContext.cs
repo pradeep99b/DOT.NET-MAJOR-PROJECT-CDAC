@@ -52,7 +52,7 @@ public partial class MedLabDatabaseContext : IdentityDbContext<User>
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-    public DbSet<User> User { get; set; }
+    public DbSet<User> Users { get; set; }
 
 
     public DbSet<Appointment> Appointment { get; set; } = default!;

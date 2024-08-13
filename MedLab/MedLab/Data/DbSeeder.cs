@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using MedLab.Constants;
+using MedLab.Models;
 
 namespace MedLab.Data
 {
@@ -9,7 +10,7 @@ namespace MedLab.Data
         {
             public static async Task SeedDefaultData(IServiceProvider service)
             {
-                var userMgr = service.GetService<UserManager<IdentityUser>>();
+                var userMgr = service.GetService<UserManager<User>>();
                 var roleMgr = service.GetService<RoleManager<IdentityRole>>();
 
                 //adding some roles to db
@@ -20,20 +21,25 @@ namespace MedLab.Data
 
             //create admin user
 
-            var admin = new IdentityUser
+            var admin = new User
                 {
                     UserName = "admin@gmail.com",
                     Email = "admin@gmail.com",
                     EmailConfirmed = true,
-                };
+                    UserRole = Role.ADMIN
 
-                var userInDb = await userMgr.FindByEmailAsync(admin.Email);
-                if (userInDb is null)
+            };
+
+            var userInDb = await userMgr.FindByEmailAsync(admin.Email);
+            if (userInDb is null)
+            {
+                var result = await userMgr.CreateAsync(admin, "Admin@123");
+                if (result.Succeeded)
                 {
-                    await userMgr.CreateAsync(admin, "Admin@123");
                     await userMgr.AddToRoleAsync(admin, Role.ADMIN.ToString());
                 }
             }
+        }
         }
     }
 

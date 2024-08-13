@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MedLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+056b9a0195a33698f6dc10348cc18f2b9be2b1c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8023a8537d15e9ef1cac4f2c0d093e5ec56cc781")]
 [assembly: System.Reflection.AssemblyProductAttribute("MedLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MedLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
