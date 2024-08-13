@@ -16,9 +16,8 @@ namespace MedLab.Models
 
         public bool IsActive { get; set; }
 
-        public int RoleID { get; set; }
-        [ForeignKey("RoleID")]
-        public UserRole? UserRole { get; set; }
+        [Required]
+        public Role UserRole { get; set; }
 
         [StringLength(100)]
         public string? CreatedBy { get; set; }
