@@ -1,45 +1,64 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using MedLab.Constants;
 using MedLab.Models;
+using MedLab.Constants;
+using System.Threading.Tasks;
 
 namespace MedLab.Data
 {
-    
-
-        public class DbSeeder
+    public static class DBSeeder
+    {
+        public static async Task SeedRolesAndAdminUser(UserManager<User> userManager, RoleManager<IdentityRole<int>> roleManager)
         {
-            public static async Task SeedDefaultData(IServiceProvider service)
+            // Define roles
+            var roles = new[]
             {
-                var userMgr = service.GetService<UserManager<User>>();
-                var roleMgr = service.GetService<RoleManager<IdentityRole>>();
-
-                //adding some roles to db
-                await roleMgr.CreateAsync(new IdentityRole(Role.ADMIN.ToString()));
-                await roleMgr.CreateAsync(new IdentityRole(Role.PATIENT.ToString()));
-                await roleMgr.CreateAsync(new IdentityRole(Role.LABASSISTANT.ToString()));
-
-
-            //create admin user
-
-            var admin = new User
-                {
-                    UserName = "admin@gmail.com",
-                    Email = "admin@gmail.com",
-                    EmailConfirmed = true,
-                    UserRole = Role.ADMIN
-
+                UserRole.PATIENT.ToString(),
+                UserRole.LABASSISTANT.ToString()
             };
 
-            var userInDb = await userMgr.FindByEmailAsync(admin.Email);
-            if (userInDb is null)
+            // Seed roles (do not seed ADMIN role if predefined)
+            foreach (var role in roles)
             {
-                var result = await userMgr.CreateAsync(admin, "Admin@123");
-                if (result.Succeeded)
+                if (!await roleManager.RoleExistsAsync(role))
                 {
-                    await userMgr.AddToRoleAsync(admin, Role.ADMIN.ToString());
+                    await roleManager.CreateAsync(new IdentityRole<int>(role));
+                }
+            }
+
+            // Check if the ADMIN role exists (predefined)
+            var adminRole = UserRole.ADMIN.ToString();
+            if (!await roleManager.RoleExistsAsync(adminRole))
+            {
+                // Log a warning or handle the missing role case
+                // You might want to throw an exception or notify the admin if the role is expected to exist
+                throw new InvalidOperationException($"The required role '{adminRole}' does not exist in the system.");
+            }
+
+            // Seed the Admin user
+            var adminEmail = "admin@medlab.com";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+            if (adminUser == null)
+            {
+                adminUser = new User
+                {
+                    UserName = adminEmail,
+                    Email = adminEmail,
+                    Role = UserRole.ADMIN,
+                    Name = "Admin User"
+                };
+
+                var createUserResult = await userManager.CreateAsync(adminUser, "Admin@123");
+                if (createUserResult.Succeeded)
+                {
+                    await userManager.AddToRoleAsync(adminUser, adminRole);
+                }
+                else
+                {
+                    // Handle errors here (log them, throw exception, etc.)
+                    throw new InvalidOperationException("Failed to create admin user.");
                 }
             }
         }
-        }
     }
-
+}

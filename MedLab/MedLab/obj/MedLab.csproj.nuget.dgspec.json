@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj": {}
+    "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\MedLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj": {
+    "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\MedLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj",
+        "projectUniqueName": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\MedLab.csproj",
         "projectName": "MedLab",
-        "projectPath": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\MedLab.csproj",
+        "projectPath": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\MedLab.csproj",
         "packagesPath": "C:\\Users\\bahuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bahuk\\Desktop\\CDAC-DOTNET MAJOR PROJECT\\MedLab\\MedLab\\obj\\",
+        "outputPath": "C:\\Users\\bahuk\\Desktop\\BackToBackend\\MedLab\\MedLab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bahuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,31 +48,25 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.7, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -80,7 +74,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.4, )"
+            },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -106,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

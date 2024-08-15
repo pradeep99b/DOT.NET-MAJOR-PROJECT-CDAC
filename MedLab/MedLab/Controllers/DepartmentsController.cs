@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MedLab.Models;
 using MedLab.Data;
+using MedLab.Models;
 
 namespace MedLab.Controllers
 {
@@ -14,9 +14,9 @@ namespace MedLab.Controllers
     [ApiController]
     public class DepartmentsController : ControllerBase
     {
-        private readonly MedLabDatabaseContext _context;
+        private readonly MedDbContext _context;
 
-        public DepartmentsController(MedLabDatabaseContext context)
+        public DepartmentsController(MedDbContext context)
         {
             _context = context;
         }
@@ -47,7 +47,7 @@ namespace MedLab.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDepartment(int id, Department department)
         {
-            if (id != department.DepartmentID)
+            if (id != department.DepartmentId)
             {
                 return BadRequest();
             }
@@ -81,7 +81,7 @@ namespace MedLab.Controllers
             _context.Department.Add(department);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDepartment", new { id = department.DepartmentID }, department);
+            return CreatedAtAction("GetDepartment", new { id = department.DepartmentId }, department);
         }
 
         // DELETE: api/Departments/5
@@ -102,7 +102,7 @@ namespace MedLab.Controllers
 
         private bool DepartmentExists(int id)
         {
-            return _context.Department.Any(e => e.DepartmentID == id);
+            return _context.Department.Any(e => e.DepartmentId == id);
         }
     }
 }

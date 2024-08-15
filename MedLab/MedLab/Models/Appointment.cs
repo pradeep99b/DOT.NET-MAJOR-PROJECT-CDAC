@@ -1,42 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using MedLab.Constants;
 
 namespace MedLab.Models
 {
     public class Appointment
     {
         [Key]
-        public int AppointmentID { get; set; }
+        public int AppointmentId { get; set; }
 
         [Required]
+        public DateTime Date { get; set; }
+
+        [Required(ErrorMessage = "Patient Id is required")]
         [ForeignKey("Patient")]
-        public int PatientID { get; set; }
-        public Patient? Patient { get; set; }
+        public int PatientId { get; set; }
 
-        [Required]
-        public int TestID { get; set; }
-        [ForeignKey("TestID")]
+        public User? Patient { get; set; }
+
+        [Required(ErrorMessage = "Test Id is required")]
+        [ForeignKey("Test")]
+        public int? TestId { get; set; }
+
         public Test? Test { get; set; }
-
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime AppointmentDate { get; set; }
-
-        [StringLength(100)]
-        public AppointmentStatus? Status { get; set; }
-
-        [StringLength(100)]
-        public string? CreatedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-
-        [StringLength(100)]
-        public string? ModifiedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime? ModifiedDate { get; set; }
     }
-
 }

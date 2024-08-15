@@ -1,38 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace MedLab.Models
 {
-   
-
     public class City
     {
         [Key]
         public int CityId { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string? CityName { get; set; }
+        [Required(ErrorMessage = "City Name is required")]
+        public string CityName { get; set; } = string.Empty;
 
-        [Required]
+        [Required(ErrorMessage = "State Id is required")]
         [ForeignKey("State")]
         public int StateId { get; set; }
 
-        [Required]
-        public bool IsActive { get; set; } = true;
+        public State? State { get; set; }
 
-        public virtual State? State { get; set; } // Navigation property
-
-        // Audit columns
-        [StringLength(50)]
-        public string? CreatedBy { get; set; }
-
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-
-        [StringLength(50)]
-        public string? ModifiedBy { get; set; }
-
-        public DateTime? ModifiedDate { get; set; }
+        public ICollection<User> Users { get; set; } = new HashSet<User>();
     }
-
 }

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MedLab.Models;
 using MedLab.Data;
+using MedLab.Models;
 
 namespace MedLab.Controllers
 {
@@ -14,9 +14,9 @@ namespace MedLab.Controllers
     [ApiController]
     public class BillingsController : ControllerBase
     {
-        private readonly MedLabDatabaseContext _context;
+        private readonly MedDbContext _context;
 
-        public BillingsController(MedLabDatabaseContext context)
+        public BillingsController(MedDbContext context)
         {
             _context = context;
         }
@@ -47,7 +47,7 @@ namespace MedLab.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBilling(int id, Billing billing)
         {
-            if (id != billing.BillingId)
+            if (id != billing.BillingID)
             {
                 return BadRequest();
             }
@@ -81,7 +81,7 @@ namespace MedLab.Controllers
             _context.Billing.Add(billing);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetBilling", new { id = billing.BillingId }, billing);
+            return CreatedAtAction("GetBilling", new { id = billing.BillingID }, billing);
         }
 
         // DELETE: api/Billings/5
@@ -102,7 +102,7 @@ namespace MedLab.Controllers
 
         private bool BillingExists(int id)
         {
-            return _context.Billing.Any(e => e.BillingId == id);
+            return _context.Billing.Any(e => e.BillingID == id);
         }
     }
 }

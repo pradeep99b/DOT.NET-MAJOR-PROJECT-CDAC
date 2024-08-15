@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MedLab.Models;
 using MedLab.Data;
+using MedLab.Models;
 
 namespace MedLab.Controllers
 {
@@ -14,9 +14,9 @@ namespace MedLab.Controllers
     [ApiController]
     public class CitiesController : ControllerBase
     {
-        private readonly MedLabDatabaseContext _context;
+        private readonly MedDbContext _context;
 
-        public CitiesController(MedLabDatabaseContext context)
+        public CitiesController(MedDbContext context)
         {
             _context = context;
         }

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MedLab.Models;
 using MedLab.Data;
+using MedLab.Models;
 
 namespace MedLab.Controllers
 {
@@ -14,9 +14,9 @@ namespace MedLab.Controllers
     [ApiController]
     public class LabAssistantsController : ControllerBase
     {
-        private readonly MedLabDatabaseContext _context;
+        private readonly MedDbContext _context;
 
-        public LabAssistantsController(MedLabDatabaseContext context)
+        public LabAssistantsController(MedDbContext context)
         {
             _context = context;
         }
@@ -47,7 +47,7 @@ namespace MedLab.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutLabAssistant(int id, LabAssistant labAssistant)
         {
-            if (id != labAssistant.LabAssistantID)
+            if (id != labAssistant.LabAssistantId)
             {
                 return BadRequest();
             }
@@ -81,7 +81,7 @@ namespace MedLab.Controllers
             _context.LabAssistant.Add(labAssistant);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetLabAssistant", new { id = labAssistant.LabAssistantID }, labAssistant);
+            return CreatedAtAction("GetLabAssistant", new { id = labAssistant.LabAssistantId }, labAssistant);
         }
 
         // DELETE: api/LabAssistants/5
@@ -102,7 +102,7 @@ namespace MedLab.Controllers
 
         private bool LabAssistantExists(int id)
         {
-            return _context.LabAssistant.Any(e => e.LabAssistantID == id);
+            return _context.LabAssistant.Any(e => e.LabAssistantId == id);
         }
     }
 }

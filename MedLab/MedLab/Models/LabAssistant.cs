@@ -6,29 +6,17 @@ namespace MedLab.Models
     public class LabAssistant
     {
         [Key]
-        public int LabAssistantID { get; set; }
+        public int LabAssistantId { get; set; }
 
-        [Required]
-        [ForeignKey("User")]
-        public string? UserID { get; set; }
-        public User? User { get; set; }
+        [Required(ErrorMessage = "Name is required")]
+        public string? Name { get; set; }
 
-        [Required]
-        public int DepartmentID { get; set; }
-        [ForeignKey("DepartmentID")]
+        [Required(ErrorMessage = "Department is required")]
+        [ForeignKey("Department")]
+        public int DepartmentId { get; set; }
+
         public Department? Department { get; set; }
 
-        [StringLength(100)]
-        public string? CreatedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-
-        [StringLength(100)]
-        public string? ModifiedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime? ModifiedDate { get; set; }
+        public ICollection<Appointment> Appointments { get; set; } = new HashSet<Appointment>();
     }
-
 }

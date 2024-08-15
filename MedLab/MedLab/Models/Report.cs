@@ -1,5 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MedLab.Models
 {
@@ -10,6 +11,7 @@ namespace MedLab.Models
 
         [Required]
         public int AppointmentID { get; set; }
+
         [ForeignKey("AppointmentID")]
         public Appointment? Appointment { get; set; }
 
@@ -22,6 +24,11 @@ namespace MedLab.Models
 
         [StringLength(100)]
         public string? UploadedBy { get; set; }
-    }
 
+        [Required]
+        public int LabAssistantID { get; set; }
+
+        [ForeignKey("LabAssistantID")]
+        public LabAssistant? LabAssistant { get; set; }
+    }
 }

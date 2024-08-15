@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MedLab.Models;
 using MedLab.Data;
+using MedLab.Models;
 
 namespace MedLab.Controllers
 {
@@ -14,9 +14,9 @@ namespace MedLab.Controllers
     [ApiController]
     public class AppointmentsController : ControllerBase
     {
-        private readonly MedLabDatabaseContext _context;
+        private readonly MedDbContext _context;
 
-        public AppointmentsController(MedLabDatabaseContext context)
+        public AppointmentsController(MedDbContext context)
         {
             _context = context;
         }
@@ -47,7 +47,7 @@ namespace MedLab.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAppointment(int id, Appointment appointment)
         {
-            if (id != appointment.AppointmentID)
+            if (id != appointment.AppointmentId)
             {
                 return BadRequest();
             }
@@ -81,7 +81,7 @@ namespace MedLab.Controllers
             _context.Appointment.Add(appointment);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAppointment", new { id = appointment.AppointmentID }, appointment);
+            return CreatedAtAction("GetAppointment", new { id = appointment.AppointmentId }, appointment);
         }
 
         // DELETE: api/Appointments/5
@@ -102,7 +102,7 @@ namespace MedLab.Controllers
 
         private bool AppointmentExists(int id)
         {
-            return _context.Appointment.Any(e => e.AppointmentID == id);
+            return _context.Appointment.Any(e => e.AppointmentId == id);
         }
     }
 }

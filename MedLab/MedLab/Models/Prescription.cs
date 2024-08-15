@@ -1,46 +1,35 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MedLab.Models
-{
-    public class Prescription
+    namespace MedLab.Models
     {
-        [Key]
-        public int PrescriptionID { get; set; }
+        public class Prescription
+        {
+            [Key]
+            public int PrescriptionID { get; set; }
 
-        [Required]
-        [ForeignKey("Patient")]
-        public int PatientID { get; set; }
-        public Patient? Patient { get; set; }
+            [Required]
+            [ForeignKey("Patient")]
+            public int PatientID { get; set; }
+            public Patient? Patient { get; set; }
 
-        [Required]
-        [ForeignKey("LabAssistant")]
-        public int LabAssistantID { get; set; }
-        public LabAssistant? LabAssistant { get; set; }
+            [ForeignKey("LabAssistant")]
+            public int? LabAssistantID { get; set; } // Nullable if not always assigned
+            public LabAssistant? LabAssistant { get; set; }
 
-        [Required]
-        [Url]
-        public string? FilePath { get; set; }
+            [Required]
+            [Url]
+            public string FilePath { get; set; } // Removed nullable as it's required
 
-        [Required]
-        [DataType(DataType.DateTime)]
-        public DateTime UploadedDate { get; set; } = DateTime.UtcNow;
+            [Required]
+            [DataType(DataType.DateTime)]
+            public DateTime UploadedDate { get; set; } = DateTime.UtcNow;
 
-        public int DepartmentID { get; set; }
-        [ForeignKey("DepartmentID")]
-        public Department? Department { get; set; }
-
-        [StringLength(100)]
-        public string? CreatedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-
-        [StringLength(100)]
-        public string? ModifiedBy { get; set; }
-
-        [DataType(DataType.DateTime)]
-        public DateTime? ModifiedDate { get; set; }
+            [ForeignKey("Department")]
+            public int? DepartmentID { get; set; } // Nullable if not always assigned
+            public Department? Department { get; set; }
+        }
     }
 
-}
+
